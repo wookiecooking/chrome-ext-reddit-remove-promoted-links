@@ -1,0 +1,17 @@
+{
+  "name": "Remove Reddit Promoted Links",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "This extension removes inline promoted links on reddit.com",
+  "converted_from_user_script": true,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.reddit.com/*"
+      ],
+      "js": [
+        "src/inject.js"
+      ]
+    }
+  ]
+}
